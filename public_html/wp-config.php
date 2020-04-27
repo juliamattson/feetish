@@ -23,13 +23,13 @@
 define( 'DB_NAME', '246400-ibgvpc660372' );
 
 /** MySQL database username */
-define( 'DB_USER', '246400_ag37689' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'jf9259JM' );
+define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'my18b.sqlserver.se' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

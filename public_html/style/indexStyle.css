@@ -1,0 +1,23 @@
+
+.menFemImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herr, .dam, .rea, #toIndex {
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Style for links in the category container */
+.herr > a, .dam > a, .rea > a {    
+    text-decoration: none;
+    color: black;
+}
+
+.herr:hover, .dam:hover, .rea:hover {
+    color: white;
+    background-color: #706C61;
+}

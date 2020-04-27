@@ -1,0 +1,259 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+} 
+
+/* HEADER */
+.headTitle {
+    width: 100vw;
+    height: 20vh;
+    background-color: #333333;
+}
+
+.headTitle > a {
+    text-decoration: none;
+}
+
+.textTitle {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/*  NAVBAR   */
+nav {
+    display: inline-flex !important;
+    width: 100vw;
+    height: auto;
+    background-color: #E1F4F3;
+    margin: 0;   
+    align-items: center; 
+    flex-wrap: wrap;  
+    justify-content: space-between;
+}
+
+.manWomanField {
+    display: flex;
+    justify-content: flex-start;
+    width: 30vw;
+    /* margin-right: 150px; */
+}
+
+.manWomanField > a {
+    text-decoration: none;
+    color: black;
+}
+  
+/* Container for Login, My Page and Cart */
+.loginCartWrap {  
+    display: flex;                          
+    width: 30vw;
+    margin-right: 3vw;
+    align-items: center;
+}
+
+.myPageText, .loginText, .cartField {
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+}
+
+.myPageText > a, .loginText > a, .cartField > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.myPageText:hover, .loginText:hover, .cartField:hover  {
+    background-color: #706C61;
+}
+
+.cartField {
+    display: inline-flex;
+    justify-content: center;
+}    
+
+/*  MAIN/ARTICLE  */
+.article {
+    background-color: white;
+    margin: 0 auto;
+    width: 95vw;
+    height: auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+#discount {
+    color: red;
+}
+
+/*  FOOTER  */  
+footer {
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    background-color: #706C61;
+    margin-top: 20px;
+}
+
+.newsletterField {
+    background-color: #C4C4C4;
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.newsletterInput {
+    color: #C4C4C4;
+    padding: 5px;
+    outline: none;
+}
+
+.sendBtn {
+    background-color: #706C61;
+    border: none;
+    color:white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    outline: none;
+}
+
+.sendBtn:hover {
+    cursor: pointer;
+}
+
+.footWrap {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.footWrap a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactUs, .clientService, .beMember {      /* Children div element for Kontakta Oss, Kundtjänst, Bli medlem */
+    width: 25%;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.mobileScreenMenu {
+    display:none;
+} 
+
+#allProducts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productDiv {
+    margin: 20px;
+    padding: 10px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.productImage {
+    width: 90px;
+    height: 70px;
+}
+
+/* Styling för knappen att lägga till en produkt i kundvagnen */
+.addToCartBtn {
+    background-color: #333333;
+    color: white;
+    outline-style: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fa-cart-arrow-down {
+    font-size: 13px;
+    color: white;
+    padding-left: 10px;
+}
+
+/* Responsivitet */
+@media only screen and (max-width: 800px) {
+    /* Navbar */
+    .loginCartWrap, .manWomanField {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .dam, .herr, .rea, .loginText, .myPageText, .cartField {
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  
+    /* Footer */
+    .footWrap {
+        flex-direction: column;
+
+    }
+    .contactUs, .clientService, .beMember {
+        width: 100%;
+    }
+
+    .menFemImg {
+        flex-wrap: wrap;
+    }
+
+    #damBild, #herrBild {
+        width: 100%;
+        margin: 20px !important;
+    }
+  }
+
+/* ON MOBILE SCREEN */  
+  @media only screen and (max-width: 600px) {
+  
+    .newsletterField {
+        width: 90%
+    }
+
+    #reaBild {
+        display: none;
+    }
+  
+}
+
+/* styling for mypage contentDIV */
+.contentDiv {
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2px;
+    background-color: #E1F4F3;
+}
+
+.text {
+    padding: 6px;
+}

@@ -40,6 +40,9 @@ get_header(); ?>
 		echo '<p>' . $shop_hours . '</p>';
 		echo '<p>' . $shop_adress . '</p>';
 		echo '<iframe id="shop-map">' . $shop_map . '</iframe>';
+
+		// Bug: GoogleMaps inte visas -> API relaterad problem
+		// Hämta post metadata -> Custom Post Type ska visas på single-butik.php sida när man trycker på butiksnamn
 	
 		 
     endwhile;

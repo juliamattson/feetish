@@ -15,25 +15,39 @@ get_header(); ?>
 	<div id="primary" class="content-area" style="width:70%!important;">
 		<main id="main" class="site-main" role="main">
 
-    
+    <?php
+		$args = array(  
+        'post_type' => 'butikerna',
+        'post_status' => 'publish',
+        'posts_per_page' => 5, 
+        'orderby' => 'title', 
+        'order' => 'ASC', 
+    );
 
-			<?php 
-			while ( have_posts() ) :
-				the_post();
+    $loop = new WP_Query( $args ); 
+		
+	
+	/* Looping ACF for shops */
+	while ( $loop->have_posts() ) : $loop->the_post();  
+		/* Saving ACF in variables */
+		$shop_name = get_field('butiksnamn');
+		$shop_hours = get_field('oppettider');
+		$shop_adress = get_field('adress');
+		$shop_map = get_field('karta');
+	
 
-				do_action( 'storefront_page_before' );
+		echo '<h1>' . $shop_name . '</h1>';
+		echo '<p>' . $shop_hours . '</p>';
+		echo '<p>' . $shop_adress . '</p>';
+		echo '<iframe id="shop-map">' . $shop_map . '</iframe>';
+	
+		 
+    endwhile;
 
-				get_template_part( 'content', 'page' ); 
+    wp_reset_postdata(); 
+ 	?>
 
-				/**
-				 * Functions hooked in to storefront_page_after action
-				 *
-				 * @hooked storefront_display_comments - 10
-				 */
-				do_action( 'storefront_page_after' );
-
-			endwhile; // End of the loop.     
-			?>
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

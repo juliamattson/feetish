@@ -1,18 +1,19 @@
 <?php
 /**
- * The template for displaying full width pages.
+ * The template for displaying our shops. Copy from fullwidth.
  *
  * Template Name: Butiker
  *
  * @package storefront
  */
 
-get_header(); ?>
+get_header();
+?>
 
 
 
 
-	<div id="primary" class="content-area" style="width:70%!important;">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
     <?php
@@ -42,8 +43,7 @@ get_header(); ?>
 		echo '<iframe id="shop-map" style="width:500px;height:300px;float:right;">' . $shop_map . '</iframe>';
 		echo '<br><br>' . '<hr>';
 
-		// Bug: GoogleMaps inte visas -> API relaterad problem
-		// Hämta post metadata -> Custom Post Type ska visas på single-butik.php sida när man trycker på butiksnamn
+
 	
 		 
     endwhile;
@@ -59,4 +59,5 @@ get_header(); ?>
 
 
 <?php
+do_action( 'storefront_sidebar' );
 get_footer();

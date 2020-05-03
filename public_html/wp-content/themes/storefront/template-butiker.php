@@ -13,6 +13,7 @@ get_header();
 
 
 
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -40,7 +41,7 @@ get_header();
 		echo '<h1>' . '<a href="' . get_the_permalink() . '">' . $shop_name . '</h1>';
 		echo '<p>' . $shop_hours . '</p>';
 		echo '<p>' . $shop_adress . '</p>';
-		echo '<iframe id="shop-map" style="width:500px;height:300px;float:right;">' . $shop_map . '</iframe>';
+		echo $shop_map;
 		echo '<br><br>' . '<hr>';
 
 

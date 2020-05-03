@@ -52,3 +52,12 @@ function create_custom_post_type () {
 }
 
 add_action('init','create_custom_post_type');
+
+
+
+
+// Maps API till ACF
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyCEOLSxzEjN7kNBZN3qzSL2yl7X_oNmUxw');
+}
+add_action('acf/init', 'my_acf_init');

@@ -20,9 +20,9 @@ Fyll på med 5 inlägg med placeholder text (lorem ipsum)
 Inläggen skall ha länkar till relaterade produkter (shortcodes kan användas för detta) 
 
 * Webbsidan skall ha en startsida med minst följande funktioner: (Frida) 
-- Ett bildspel som presenterar aktuella kampanjer.  
-- En kampanj kan representeras av en kategori med produkter, eller en rabattkod som ger rabatt.  
-- Bildspelet kan vara en del i ert tema eller skapas med ett färdigt bildspelsplugin. 
+Ett bildspel som presenterar aktuella kampanjer.  
+En kampanj kan representeras av en kategori med produkter, eller en rabattkod som ger rabatt.  
+Bildspelet kan vara en del i ert tema eller skapas med ett färdigt bildspelsplugin. 
 
 * Det skall finnas en sida som listar företagets butiker. (Michelle) 
 Butikerna skall skapas med hjälp av en Custom Post Type 
@@ -31,13 +31,13 @@ Det skall finnas ett fält för plats och på sidan för butiken skall man kunna
 * Ni skall ställa in så att e-handeln har moms enligt svenska regler. Om ni inte säljer någon speciell typ av produkt skall det vara 25% moms. Även frakt skall vara belagt med 25% moms (Lucas) 
 
 * Kunden skall kunna registrera sig på webbplatsen och använda de "mina sidor"-funktioner som följer med WooCommerce. (Ensar) 
-- De skall kunna byta lösenord 
-- De skall kunna se sina tidigare order 
-- De skall kunna redigera sin faktura och leveransadress 
+De skall kunna byta lösenord 
+De skall kunna se sina tidigare order 
+De skall kunna redigera sin faktura och leveransadress 
 
 * Det skall finnas en kontaktsida med följande funktioner (Michelle) 
-- En karta som visar var företaget har sitt huvudkontor o Ett formulär med följande fält: 
-- Ärende (Möjligt att välja ”kontakt”, ” reklamation”, ”faktura”)  
+En karta som visar var företaget har sitt huvudkontor o Ett formulär med följande fält: 
+Ärende (Möjligt att välja ”kontakt”, ” reklamation”, ”faktura”)  
 ▪ Namn  
 ▪ Epost  
 ▪ Meddelande  
@@ -59,5 +59,5 @@ Fälten för dem kan använda sig av Advanced Custom Fields
 * Skapa undersidor samt fixa dropdownmeny (Julia) 
 
 * För att visa att er e-handel fungerar skall ni lägga testorder. (Ensar) 
-- Genomför minst 10 testköp med varje betalningsmetod och leveransalternativ 
-- Alltså minst 20 testköp totalt 
+Genomför minst 10 testköp med varje betalningsmetod och leveransalternativ 
+Alltså minst 20 testköp totalt 

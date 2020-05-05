@@ -16,8 +16,8 @@ Minst 4 av produkterna skall vara variabla produkter.
 * Det skall finnas en sida med villkor och regler (Lucas) 
 
 * Det skall finnas en blogg där det företaget publicerar inlägg om nya och kommande produkter (Julia) 
-- Fyll på med 5 inlägg med placeholder text (lorem ipsum)  
-- Inläggen skall ha länkar till relaterade produkter (shortcodes kan användas för detta) 
+Fyll på med 5 inlägg med placeholder text (lorem ipsum)  
+Inläggen skall ha länkar till relaterade produkter (shortcodes kan användas för detta) 
 
 * Webbsidan skall ha en startsida med minst följande funktioner: (Frida) 
 - Ett bildspel som presenterar aktuella kampanjer.  
